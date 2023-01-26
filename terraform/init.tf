@@ -20,5 +20,5 @@ provider "aws" {
 locals {
   function_name = "${var.app_name}-func"
   function_name_crawler = "${var.app_name}-crawler"
-  name = test-vs-surface
+  name = "test-vs-surface"
 }
