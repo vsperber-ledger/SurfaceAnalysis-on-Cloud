@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "analysis" {
-  bucket        = "test-vs-surface-bucket"
+  bucket        = "${local.name}-bucket"
   force_destroy = "false"
 }
 
