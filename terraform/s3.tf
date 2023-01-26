@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "analysis" {
-  bucket        = "${local.name}-bucket"
-  force_destroy = "true"
+  bucket        = "test-vs-surface-bucket"
+  force_destroy = "false"
 }
 
 resource "aws_s3_bucket_object" "error" {
