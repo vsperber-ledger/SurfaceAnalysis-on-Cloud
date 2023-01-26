@@ -1,7 +1,3 @@
-locals {
-  name = "test-vs-surface"
-}
-
 resource "aws_s3_bucket" "analysis" {
   bucket        = "${local.name}-bucket"
   force_destroy = "false"
