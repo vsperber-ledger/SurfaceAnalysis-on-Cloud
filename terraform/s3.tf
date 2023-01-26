@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "analysis" {
   force_destroy = "false"
 }
 
-resource "aws_s3_bucket_object" "error" {
+resource "aws_s3_object" "error" {
   bucket = aws_s3_bucket.analysis.bucket
   key    = "error.html"
   source = "s3/error.html"
