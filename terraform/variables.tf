@@ -30,7 +30,7 @@ variable "codecommit_email" {
 
 # System name to build on AWS
 variable "app_name" {
-  default = "malware-analysis"
+  default = "test-vs-surface"
 }
 
 # IP address to access API Gateway and S3
